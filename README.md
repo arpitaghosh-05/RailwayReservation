@@ -2,13 +2,28 @@
 pragma solidity ^0.8.20;
 Contract Name: RailwayReservation
 
+
+🚆 Project Overview: Railway Reservation System (Solidity)
+🎯 Objective
+
+>To develop a decentralized railway ticket booking system where:
+
+>Train schedules are stored on the blockchain.
+
+>Users can book and cancel tickets transparently.
+
+>Data integrity is ensured (no fake bookings or tampering).
+
+>Payment can be managed using Ether or stablecoins.
+
+
 Main Components:
 
-struct Train – Stores details about each train.
+>struct Train – Stores details about each train.
 
-mapping(uint => Train) – Stores train information.
+>mapping(uint => Train) – Stores train information.
 
-mapping(uint => address[]) – Keeps track of passengers per train.
+>mapping(uint => address[]) – Keeps track of passengers per train.
 
 modifier onlyOwner() – Restricts functions to the contract owner.
 | Function                                            | Access           | Description                                                      |
@@ -47,8 +62,20 @@ getPassengers(1)
 6. Withdraw Funds (Admin Only)
 withdraw()
 
+🔐 Key Benefits
+
+>Transparency: Every booking is recorded on-chain and visible to all.
+
+>Security: Immutable data — no double booking or fraudulent modifications.
+
+>Automation: No intermediaries; smart contracts handle booking & refunds.
+
 
 ![95ec477d-276f-4a6e-b70a-f26586bcabf3](https://github.com/user-attachments/assets/e8edfa19-4510-41b9-9134-c870b8eda6fb)
+
+contract address:
+
+0xda16fd8Af6319DF9F1D7ECC4Da26Aaf62af279d2
 
 
 
